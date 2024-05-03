@@ -20,7 +20,7 @@ async function scraper() {
             const name = item.querySelector('.KzDlHZ') && item.querySelector('.KzDlHZ').innerText
             const rating = item.querySelector('.Y1HWO0') && item.querySelector('.Y1HWO0').innerText
             const description = item.querySelector('._6NESgJ') && item.querySelector('._6NESgJ').innerText
-            const image = item.querySelector('._4WELSP .DByuf4').src
+            const image = item.querySelector('._4WELSP .DByuf4') && item.querySelector('._4WELSP .DByuf4').src
 
             data.list.push({
                 name: name,
